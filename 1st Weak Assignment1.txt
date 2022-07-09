@@ -1,0 +1,95 @@
+QUESTION: 1
+ANSWER: 
+	#include<stdio.h>
+	int main(){
+	    printf("Hello Students");
+	    return 0;
+	}
+QUESTION: 2
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    printf("Hello \nStudents");
+	    return 0;
+	}
+QUESTION: 3
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    printf("\"MySirG\"");
+	    return 0;
+	}
+QUESTION: 4
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    int R;
+	    float area;
+	    printf("Enter the Value of Radius:");
+	    scanf("%d",&R);
+	    area = 3.14*R*R;
+	    printf("Area of circle is %.2f having the radius %d.", area, R);
+	    return 0;
+	}
+QUESTION: 5
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    int x = printf("My name is Khan and I am not a terrorist:");
+	    printf("\n%d",x);
+	    return 0;
+	}
+QUEATION: 6
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    char name[20];
+	    printf("Enter your name:");
+	    gets(name);
+	    printf("\"Hello , %s\"",name);
+	    return 0;
+	}
+QUESTION: 7
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    printf("%%d");
+	    return 0;
+	}
+QUESTION: 8
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    printf("\\n");
+	    return 0;
+	}
+QUESTION: 9
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    printf("\\\\");
+	    return 0;
+	}
+QUESTION: 10
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    int day, month, year;
+	    printf("Enter day month and year in the below format: dd/mm/yyyy");
+	    scanf("%d%d%d",&day, &month, &year);
+	    printf("Day-%d, Month-%d, Year-%d",day, month, year);
+	    return 0;
+	}
+QUESTION: 11
+ANSWER:
+	#include<stdio.h>
+	int main(){
+	    int hh, mm;
+	    printf("Enter time in given format- HH:MM");
+	    scanf("%d%d",&hh, &mm);
+	    printf("%d Hours and %d Minutes",hh, mm);
+	    return 0;
+	}
+QUESTION: 12
+ANSWER:
+	OUTPUT = ineuron7
