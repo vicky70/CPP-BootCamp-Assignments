@@ -1,0 +1,181 @@
+QUESTION: 1
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    int digit, unitDigit;
+    printf("Enter any number:");
+    scanf("%d",&digit);
+    unitDigit = (digit%10);
+    printf("unit digit of given number is: %d", unitDigit);
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------
+QUESTION: 2
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    int digit, unitDigit;
+    printf("Enter any number:");
+    scanf("%d",&digit);
+    unitDigit = (digit/10);
+    printf("unit digit of given number is: %d", unitDigit);
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------
+QUESTION: 3
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    int var1, var2, temp;
+    printf("Enter two values:");
+    scanf("%d%d",&var1,&var2);
+    printf("Values before swap: %d %d\n", var1, var2);
+    temp  = var1;
+    var1 = var2;
+    var2 = temp;
+    printf("Swaped value is: %d %d", var1, var2);
+    return 0;
+}
+---------------------------------------------------------------------------------------------------------------
+QUESTION: 4
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    int var1, var2;
+    printf("Enter two values:");
+    scanf("%d%d",&var1,&var2);
+    printf("value before swaping: %d %d\n", var1, var2);
+    var2 = var1 + var2;
+    var1 = var2 - var1;
+    var2 = var2 - var1;
+    printf("value after swaping: %d %d", var1, var2);
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------
+QUESTION: 5
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    int number, digit1, digit2, sum;
+    printf("Enter any three digit number:");
+    scanf("%d",&number);
+    digit1 = number%10;
+    number = number/10;
+    digit2 = number%10;
+    number  = number/10;
+    sum = digit1 + digit2 + number;
+    printf("Sum of digits is %d", sum);
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------------
+QUESTION: 6
+ANSWER:
+
+#include <stdio.h>
+int main() {  
+    char c;
+    printf("Enter a character: ");
+    scanf("%c", &c);  
+    printf("ASCII value of %c = %d\n", c, c);
+    
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------------------
+QUESTION: 7
+ANSWER:
+
+-------------------------------------------------------------------------------------------------------------------------
+QUESTION: 8
+ANSWER:
+
+#include<stdio.h>
+int main()
+{
+   int n;
+   printf("Enter an integer\n");
+   scanf("%d",&n);
+   if ( n & 1 == 1 )
+      printf("Odd\n");
+   else
+      printf("Even\n");
+   return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------
+QUESTION:9
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    int x1;
+    float x2;
+    char x3;
+    double x4;
+    // printf(sizeof(x2));
+    printf("Size of int variable: %d\n",sizeof(x1));
+    printf("Size of float variable: %d\n",sizeof(x2));
+    printf("Size of char variable: %d\n",sizeof(x3));
+    printf("Size of double variable: %d\n", sizeof(x4));
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+QUESTION: 10
+ANSWER;
+
+#include<stdio.h>
+int main(){
+    int number;
+    printf("enter any number:");
+    scanf("%d", &number);
+    number = number/10;
+    number = (number * 10);
+    printf("number is: %d",number);
+    return 0;
+}
+------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION: 11
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    int digit, number;
+    printf("Enter a number and a digit to appended:");
+    scanf("%d%d",&number,&digit);
+    number = (number * 10) + digit;
+    printf("appended value is %d", number);
+    return 0;
+}
+--------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION: 12
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    float rs, usd;
+    printf("Enter Rs values to be converted:");
+    scanf("%f",&rs);
+    usd = rs/76.23;
+    printf("The USD value is: %.3f", usd);
+    return 0;
+}
+-------------------------------------------------------------------------------------------------------------------------------------------
+QUESTION: 13
+ANSWER:
+
+#include<stdio.h>
+int main(){
+    int number, rem;
+    printf("Enter any number:");
+    scanf("%d",&number);
+    rem = number%10;
+    number /= 10;
+    rem *= 100;
+    rem += number;
+    printf("Rotated number is: %d",rem);
+    return 0; 
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
