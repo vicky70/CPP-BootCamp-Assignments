@@ -1,0 +1,148 @@
+QUESTION: 1
+ANSWER:
+// Write a program to print MySirG 5 times on the screen
+#include<stdio.h>
+int main(){
+    int i=1;
+    while (i<=5)
+    {
+        printf("MySirG\n");
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 2
+ANSWER:
+// Write a program to print the first 10 natural numbers.
+#include<stdio.h>
+int main(){
+    int i=1;
+    while (i<=10)
+    {
+        printf("%d\n",i);
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 3
+ANSWER:
+// Write a program to print the first 10 natural numbers in reverse order
+#include<stdio.h>
+int main(){
+    int i=10;
+    while (i>=1)
+    {
+        printf("%d\n",i);
+        i--;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 4
+ANSWER:
+// Write a program to print the first 10 odd natural numbers
+#include<stdio.h>
+int main(){
+    int i=1;
+    while (i<=20){
+        if (i%2!=0)
+        {
+            printf("%d\n",i);
+        }
+        i++;
+    }
+    return 0; 
+}
+________________________________________________________________________________
+QUESTION: 5
+ANSWER:
+// Write a program to print the first 10 odd natural numbers in reverse order.
+#include<stdio.h>
+int main(){
+    int i=20;
+    while (i>=1){
+        if (i%2!=0)
+        {
+            printf("%d\n",i);
+        }
+        i--;
+    }
+    return 0; 
+}
+________________________________________________________________________________
+QUESTION: 6
+ANSWER:
+// Write a program to print the first 10 even natural numbers
+#include<stdio.h>
+int main(){
+    int i=1;
+    while (i<=20){
+        if (i%2==0)
+        {
+            printf("%d\n",i);
+        }
+        i++;
+    }
+    return 0; 
+}
+________________________________________________________________________________
+QUESTION: 7
+ANSWER:
+// Write a program to print the first 10 even natural numbers in reverse order
+#include<stdio.h>
+int main(){
+    int i=20;
+    while (i>=2){
+        if (i%2==0)
+        {
+            printf("%d\n",i);
+        }
+        i--;
+    }
+    return 0; 
+}
+________________________________________________________________________________
+QUESTION: 8
+ANSWER:
+// Write a program to print squares of the first 10 natural numbers
+#include<stdio.h>
+int main(){
+    int i=1;
+    while (i<=10)
+    {
+        printf("%d\n",i*i);
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 9
+ANSWER:
+// Write a program to print cubes of the first 10 natural numbers
+#include<stdio.h>
+int main(){
+    int i=1;
+    while (i<=10)
+    {
+        printf("%d\n",i*i*i);
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 10
+ANSWER:
+// Write a program to print a table of 5.
+#include<stdio.h>
+int main(){
+    int i=1;
+    while (i<=10)
+    {
+        printf("%d\n",i*5);
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
