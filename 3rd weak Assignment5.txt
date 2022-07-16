@@ -1,0 +1,168 @@
+QUESTION: 1
+ANSWER:
+// Write a program to print MySirG N times on the screen
+#include<stdio.h>
+int main(){
+    int i=1, pri;
+    printf("Enter value to be printed:");
+    scanf("%d",&pri);
+    while (i<=pri)
+    {
+        printf("MySirG\n");
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 2
+ANSWER:
+// Write a program to print the first N natural numbers.
+#include<stdio.h>
+int main(){
+    int i=1, n;
+    printf("Enter any number:");
+    scanf("%d",&n);
+    while (i<=n)
+    {
+        printf("%d\n",i);
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 3
+ANSWER:
+// Write a program to print the first N natural numbers in reverse order
+#include<stdio.h>
+int main(){
+    int i;
+    printf("Enter any number:");
+    scanf("%d",&i);
+    while (i>=1)
+    {
+        printf("%d\n",i);
+        i--;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 4
+ANSWER:
+// Write a program to print the first N odd natural numbers
+#include<stdio.h>
+int main(){
+    int i=1, n;
+    printf("enter any number:");
+    scanf("%d",&n);
+    while (i<=n){
+        if (i%2!=0)
+        {
+            printf("%d\n",i);
+        }
+        i++;
+    }
+    return 0; 
+}
+________________________________________________________________________________
+QUESTION: 5
+ANSWER:
+// Write a program to print the first N odd natural numbers in reverse order.
+#include<stdio.h>
+int main(){
+    int i=1, n;
+    printf("enter any number:");
+    scanf("%d",&n);
+    while (n>=i){
+        if (n%2!=0)
+        {
+            printf("%d\n",n);
+        }
+        n--;
+    }
+    return 0; 
+}
+________________________________________________________________________________
+QUESTION: 6
+ANSWER:
+// Write a program to print the first N even natural numbers
+#include<stdio.h>
+int main(){
+    int i=1, n;
+    printf("Enter any number:");
+    scanf("%d",&n);
+    while (i<=n){
+        if (i%2==0)
+        {
+            printf("%d\n",i);
+        }
+        i++;
+    }
+    return 0; 
+}
+________________________________________________________________________________
+QUESTION: 7
+ANSWER:
+// Write a program to print the first N even natural numbers in reverse order
+#include<stdio.h>
+int main(){
+    int i=1;
+    printf("Enter any number:");
+    scanf("%d",&i);
+    while (i>=2){
+        if (i%2==0)
+        {
+            printf("%d\n",i);
+        }
+        i--;
+    }
+    return 0; 
+}
+________________________________________________________________________________
+QUESTION: 8
+ANSWER:
+// Write a program to print squares of the first N natural numbers
+#include<stdio.h>
+int main(){
+    int i=1,n;
+    printf("Enter any number:");
+    scanf("%d",&n);
+    while (i<=n)
+    {
+        printf("%d\n",i*i);
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 9
+ANSWER:
+// Write a program to print cubes of the first N natural numbers
+#include<stdio.h>
+int main(){
+    int i=1,n;
+    printf("Enter any number:");
+    scanf("%d",&n);
+    while (i<=n)
+    {
+        printf("%d\n",i*i*i);
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
+QUESTION: 10
+ANSWER:
+// Write a program to print a table of N.
+#include<stdio.h>
+int main(){
+    int i=1,n;
+    printf("Enter any number:");
+    scanf("%d",&n);
+    while (i<=10)
+    {
+        printf("%d\n",i*n);
+        i++;
+    }
+    return 0;
+}
+________________________________________________________________________________
