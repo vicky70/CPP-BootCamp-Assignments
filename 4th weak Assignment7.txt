@@ -1,0 +1,252 @@
+QUESTION: 1
+ANSWER:
+// Write a program to find the Nth term of the Fibonnaci series.
+#include<stdio.h>
+int main(){
+    int term, next, temp,f1=0,fl=1;
+    printf("Enter term value of fibonaci series:");
+    scanf("%d",&term);
+    if (term == 0 || term == 1){
+        printf("fibonaci series is %d",f1);
+    }
+    for (int i = 2; i < term; i++)
+    {
+        next = f1+fl;
+        temp=next;
+        f1=fl;
+        fl=temp;
+    }
+    printf("%d",next);
+    return 0;
+}
+______________________________________________________________________________________
+QUESTION: 2
+ANSWER:
+// Write a program to print first N terms of Fibonacci series
+#include<stdio.h>
+int main(){
+    int term, next, temp,f1=0,fl=1;
+    printf("Enter term value of fibonaci series:");
+    scanf("%d",&term);
+    if (term == 0 || term == 1){
+        printf("fibonaci series is %d",f1);
+    }
+    else{
+        printf("%d %d ",f1, fl);
+    }
+    for (int i = 2; i < term; i++)
+    {
+        next = f1+fl;
+        printf("%d ",next);
+        temp=next;
+        f1=fl;
+        fl=temp;
+    }
+    return 0;
+}
+______________________________________________________________________________________
+QUESTION: 3
+ANSWER:
+// Write a program to check whether a given number is there in the Fibonacci series or not.
+#include<stdio.h>
+int main(){
+    int term, next, temp,f1=0,fl=1;
+    printf("Enter a value to be search in  fibonaci series:");
+    scanf("%d",&term);
+    if (term == 0 || term == 1){
+        printf("fibonaci series is %d",f1);
+    }
+    for (int i = 2; 1; )
+    {
+        next = f1+fl;
+        if (term == next)
+        {
+            printf("Yes given value is persent in fibonaci series: %d",term);
+            break;
+        }
+        else if (next > term)
+        {
+            printf("No given value is not persent fibonaci series: %d",term);
+            break;
+        }
+        temp=next;
+        f1=fl;
+        fl=temp;
+    }
+    return 0;
+}
+______________________________________________________________________________________
+QUESTION: 4
+ANSWER:
+// Write a program to calculate HCF of two numbers
+#include <stdio.h>
+int main()
+{
+    int n1, n2;
+    printf("Enter two positive integers: ");
+    scanf("%d %d",&n1,&n2);
+    while(n1!=n2)
+    {
+        if(n1 > n2)
+            n1 -= n2;
+        else
+            n2 -= n1;
+    }
+    printf("HCF = %d",n1);
+    return 0;
+}
+______________________________________________________________________________________
+QUESTION: 5
+ANSWER:
+// Write a program to check whether two given numbers are co-prime numbers or not
+// Write a program to calculate HCF of two numbers
+#include <stdio.h>
+int main()
+{
+    int n1, n2;
+    printf("Enter two positive integers: ");
+    scanf("%d %d",&n1,&n2);
+    while(n1!=n2)
+    {
+        if(n1 > n2)
+            n1 -= n2;
+        else
+            n2 -= n1;
+    }
+    if (n1 == 1)
+    {
+        printf("Yes given numbers are Co-Prime");
+    }
+    else{
+        printf("No given numbers are not Co-Prime");
+    }
+    return 0;
+}
+______________________________________________________________________________________
+QUESTION: 6
+ANSWER:
+// Write a program to print all Prime numbers under 100
+#include <stdio.h>
+int main(){
+    int i, num, count;
+    for (num = 1; num <= 100; num++){
+        count = 0;
+        for (i = 2; i <= num/2; i++){
+            if (num % i == 0){
+                count++;
+                break;
+            }
+        }
+        if (count == 0 && num != 1){
+            printf("%d \n", num);
+        }
+    }
+    return 0;
+}
+______________________________________________________________________________________
+QUESTION: 7
+ANSWER:
+// Write a program to print all Prime numbers between two given numbers
+#include <stdio.h>
+int main(){
+    int num, count;
+    printf("Enter Range of prime number:");
+    scanf("%d", &num);
+    for (int i = num; i > 0; i++){
+        count = 0;
+        for (int j = 1; j <= i; j++){
+            if (i%j == 0){
+                count++;
+            }
+        }
+        if (count == 2){
+            printf("%d \n", i);
+            break;
+        }
+    }
+    return 0;
+}
+______________________________________________________________________________________
+QUESTION: 8
+ANSWER:
+// Write a program to find next Prime number of a given number
+#include <stdio.h>
+int main()    
+{
+   int n,i,j,flag=0,out;
+   printf("enter the num");
+   scanf("%d",&n);
+   for(i=n+1;i>0;i++)
+   {
+      flag=0;
+
+      for(j=2;j<i;j++)
+      {
+         if(i%j==0)
+         {
+            flag=1;
+            break;
+         }
+      }
+      if(flag==0)
+      {
+         printf("next prime is:%d",i);
+         break;
+      }
+   }
+   return 0;
+}
+______________________________________________________________________________________
+QUESTION: 9
+ANSWER:
+// Write a program to check whether a given number is an Armstrong number or not
+#include<stdio.h>  
+int main()    
+{    
+int n,r,sum=0,temp;    
+printf("enter the number=");    
+scanf("%d",&n);    
+temp=n;    
+while(n>0)    
+{    
+r=n%10;    
+sum=sum+(r*r*r);    
+n=n/10;    
+}    
+if(temp==sum)    
+printf("armstrong  number ");    
+else    
+printf("not armstrong number");    
+return 0;  
+}
+______________________________________________________________________________________
+QUESTION: 10
+ANSWER:
+// Write a program to print all Armstrong numbers under 1000
+#include <stdio.h>
+ 
+void main()
+{
+    int temp, digit1, digit2, digit3;
+ 
+    printf("All Armstrong numbers between 1 and 1000 are:\n");
+    for(int n=1;n<=1000;n++)  //suppose loop is at n = 371
+    {
+        if(n<=9)
+        {
+            printf("%d \n",n);
+        }
+        else
+        {
+            digit1 = n % 10;   
+            digit2 = (n % 100 - digit1) / 10;       
+            digit3 = (n % 1000 - digit2) /100; 
+            temp = (digit1 * digit1 * digit1) + (digit2 * digit2 * digit2) + (digit3 * digit3 * digit3); 
+	if (temp == n)
+            {
+                printf("%d \n", temp);
+            }
+        }
+    }
+}
+______________________________________________________________________________________
