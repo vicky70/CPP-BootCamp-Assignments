@@ -1,0 +1,379 @@
+QUESTION: 1
+ANSWER:
+// Write a program which takes the month number as an input and display number of days in that month
+#include<stdio.h>
+int main(){
+    int month;
+    printf("Enter month number:");
+    scanf("%d",&month);
+    switch (month)
+    {
+    case 1:
+        printf("31 Days");
+        break;
+    case 2:
+        printf("28 Day");
+        break;
+    case 3:
+        printf("31 Days");
+        break;
+    case 4:
+        printf("30 Days");
+        break;
+    case 5:
+        printf("31 Days");
+        break;
+    case 6:
+        printf("30 Days");
+        break;
+    case 7:
+        printf("31 Days");
+        break;
+    case 8:
+        printf("31 Days");
+        break;
+    case 9:
+        printf("30 Days");
+        break;
+    case 10:
+        printf("31 Days");
+        break;
+    case 11:
+        printf("30 Days");
+    case 12:
+        printf("31 Days");
+        break;
+    default:
+        printf("Enter a vaild month:");
+        break;
+    }
+}
+__________________________________________________________________________________________
+QUESTION: 2
+ANSWER:
+/*Write a menu driven program with the following options:
+a. Addition
+b. Subtraction
+c. Multiplication
+d. Division
+e. Exit*/
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    char option;
+    int a, b, result;
+        printf("Enter a for Addition:\n");
+        printf("Enter b for Subtraction:\n");
+        printf("Enter c for Multiplication:\n");
+        printf("Enter d for Division:\n");
+        printf("Enter e for Exit:\n");
+        printf("Enter your choice:");
+        scanf("%c",&option);
+        switch (option)
+        {
+        case 'a':
+            printf("Enter two values:");
+            scanf("%d %d", &a, &b);
+            result = a+b;
+            printf("sum of numbers is: %d\n",result);
+            break;
+        case 'b':
+            printf("Enter two values:");
+            scanf("%d %d", &a, &b);
+            result = a-b;
+            printf("Subtraction of numbers is: %d\n",result);
+            break;
+        case 'c':
+            printf("Enter two values:");
+            scanf("%d %d", &a, &b);
+            result = a*b;
+            printf("Multiplication of numbers is: %d\n",result);
+            break;
+        case 'd':
+            printf("Enter two values:");
+            scanf("%d %d", &a, &b);
+            result = a/b;
+            printf("Division of numbers is: %d\n",result);
+            break;
+        case 'e':
+            exit(0);
+            break;
+        }
+}
+__________________________________________________________________________________________
+QUESTION: 3
+ANSWER:
+// Write a program which takes the day number of a week and displays a unique greeting message for the day
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter weak day number:");
+    scanf("%d",&n);
+    switch (n)
+    {
+    case 1:
+        printf("It's Monday! Hope this weak will bring happiness in your life:");
+        break;
+    case 2:
+        printf("It's tuesday and hope you are enjoying this weak:");
+        break;
+    case 3:
+        printf("it's wednesday please don't give up");
+        break;
+    case 4:
+        printf("it's thuresday you are so nice:");
+        break;
+    case 5:
+        printf("it's friday Go for Namaz:");
+        break;
+    case 6:
+        printf("it's satarday Half weakend:");
+        break;
+    case 7:
+        printf("It's sunday Today is hoilyday:");
+    default:
+        printf("Enter vaild choice:");
+        break;
+    }
+    return 0;
+}
+__________________________________________________________________________________________
+QUESTION: 4
+ANSWER:
+/*Write a menu driven program with the following options:
+a. Check whether a given set of three numbers are lengths of an
+isosceles triangle or not
+b. Check whether a given set of three numbers are lengths of sides of
+a right angled triangle or not
+c. Check whether a given set of three numbers are equilateral triangle
+or no*/
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    int n, s1, s2, s3;
+    printf("enter 1 for isoscles triangle or not:\n");
+    printf("enter 2 for right angled triangle or not:\n");
+    printf("enter 3 for equilateral triangle or not:\n");
+    printf(" enter 4 exit:\n");
+    printf("Enter your choice:");
+    scanf("%d",&n);
+    switch (n)
+    {
+    case 1:
+        printf("Enter value of triangle sides:\n");
+        scanf("%d%d%d", &s1, &s2, &s3);
+        if(s1 == s2 || s1 == s3 || s2 == s3){
+            printf("It is Isoscles triangle:\n");
+            break;
+        }
+        else
+        {
+            printf("It is not Isoscles triagle:\n");
+            break;
+        }
+    case 2:
+        printf("Enter value of base perpendicular and hypotenus:\n");
+        scanf("%d%d%d", &s1, &s2, &s3);
+        if ((s3*s3) == (s1*s1) + (s2*s2))
+        {
+            printf("It is Right angle triangle:\n");
+            break;
+        }
+        else{
+            printf("No It is Right angle triangle:\n");
+            break;
+        }
+    case 3:
+        printf("Enter value of triangle sides:\n");
+        scanf("%d%d%d", &s1, &s2, &s3);
+        if (s1 == s2 && s2 == s3 && s1 == s3)
+        {
+            printf("It is Equilateral Triangle:\n");
+            break;
+        }
+        else{
+            printf("No It is Equilateral Triangle:\n");
+            break;
+        }
+    case 4:
+        exit(0);
+        
+    default:
+        printf("Enter vaild choice:\n");
+        break;
+    }
+    return 0;
+}
+__________________________________________________________________________________________
+QUESTION: 5
+ANSWER:
+// Convert the following if-else-if construct into switch case:
+// if(var == 1)
+// System.out.println("good");
+// else if(var == 2)
+// System.out.println("better");
+// else if(var == 3)
+// System.out.println("best");
+// else
+// System.out.println("invalid");
+#include<stdio.h>
+int main(){
+    int n;
+    printf("Enter number b/w 1 to 3:");
+    scanf("%d",&n);
+    switch (n)
+    {
+    case 1:
+        printf("good");
+        break;
+    case 2:
+        printf("better");
+        break;
+    case 3:
+        printf("best");
+        break;
+    default:
+        printf("invalid");
+        break;
+    }
+    return 0;
+}
+__________________________________________________________________________________________
+QUESTION: 6
+ANSWER:
+// Program to check whether a year is a leap year or not. Using switch statement
+#include<stdio.h>
+int main(){
+    int year, x;
+    printf("Enter 1 for year:");
+    scanf("%d",&year);
+    x = year%4 +1;
+    switch (x)
+    {
+    case 1:
+        printf("Leap Year:");
+        break;
+    case 2:
+        printf("Not_Leap_Year");
+    default:
+        break;
+    }
+    return 0;
+}
+__________________________________________________________________________________________
+QUESTION: 7
+ANSWER:
+/*Program to take the value from the user as input electricity unit charges
+and calculate total electricity bill according to the given condition . Using
+the switch statement.
+For the first 50 units Rs. 0.50/unit
+For the next 100 units Rs. 0.75/unit
+For the next 100 units Rs. 1.20/unit
+For units above 250 Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill.*/
+#include<stdio.h>
+int main(){
+    int unit;
+    float bill;
+    printf("Enter electricity unit charges:");
+    scanf("%d", &unit);
+    switch (unit)
+    {
+    case 50 :
+        bill = 50*0.5;
+        printf("Your elecricity bill is: %f", bill); 
+        break;
+    case 100:
+        bill = 100*0.75;
+        printf("Your elecricity bill is: %f", bill);
+        break;
+    case 250:
+        bill = (250*1.50)*20/100;
+        printf("Your elecricity bill is: %f", bill);
+        break;
+    default:
+        printf("Enter any valid choice:");
+        break;
+    }
+    return 0;
+}
+__________________________________________________________________________________________
+QUESTION: 8
+ANSWER:
+// Program to convert a positive number into a negative number and negative
+// number into a positive number using a switch statement.
+#include<stdio.h>
+int main(){
+    int num, choice;
+    printf("Enter 1 for positive number:\n");
+    printf("Enter 2 for nagative number:\n");
+    scanf("%d", &choice);
+    switch (choice)
+    {
+    case 1:
+        printf("Enter your positive number:");
+        scanf("%d", &num);
+        printf("The nagative of your positive number is: %d", -num);
+        break;
+    case 2:
+        printf("Enter your negative number:");
+        scanf("%d", &num);
+        printf("The positive of your negative number is: %d", -num);
+        break;
+    default:
+        printf("zero is not allowed:\n");
+        break;
+    }
+    return 0;
+}
+__________________________________________________________________________________________
+QUESTION: 9
+ANSWER:
+// Program to Convert even number into its upper nearest odd number Switch Statement.
+#include<stdio.h>
+int main(){
+    int even, x;
+    printf("Enter any even number:");
+    scanf("%d", &even);
+    x = even%2 +1;
+    switch (x)
+    {
+    case 1:
+        printf("The Upper nearest odd number is: %d", even+1);
+        break;
+    default:
+        printf("Odd numbers are Not Allowed: \n");
+        printf("Enter any even number:");
+        break;
+    }
+}
+__________________________________________________________________________________________
+QUESTION: 10
+ANSWER:
+// C program to find all roots of a quadratic equation using switch case
+#include<stdio.h>
+int main(){
+    int root, a, b, c;
+    printf("Enter value of a, b, c:");
+    scanf("%d %d %d", &a, &b, &c);
+    root = (b*b) - 4*a*c;
+    switch (root > 0)
+    {
+    case 0:
+        if (root == 0)
+        {
+            printf("Roots are Same and Real:");
+            break;
+        }
+        printf("Roots are Imagnary");
+        break;
+    case 1:
+        printf("Roots are different and Real:");
+        break;
+    
+    default:
+        break;
+    }
+    return 0;
+}
+__________________________________________________________________________________________
